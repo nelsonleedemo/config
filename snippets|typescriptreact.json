@@ -32,11 +32,11 @@
 		"$1",
 		"}",
 		"",
-		"const $TM_FILENAME_BASE: React.FC<${TM_FILENAME_BASE}Props> = ({$2}) => {",
+		"const ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}: React.FC<${TM_FILENAME_BASE}Props> = ({$2}) => {",
 		"\treturn ($3);",
 		"}",
 		"",
-		"export default $TM_FILENAME_BASE;"
+		"export default ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/};"
 	  ],
 	  "description": "Typescript React Function Component"
 	},
